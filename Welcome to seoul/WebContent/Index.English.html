@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <script src="https://use.fontawesome.com/6c3459a7ba.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+         <div class="logo"><a href="#"><img src="img/logo.PNG" alt=""></a></div>
+            <ul class="menu">
+            <li><a href="Index.English.html">Home</a></li>
+            <li><a href="SeoulArea.html">Area</a></li>
+            <li><a href="#services">Destination Share</a></li>
+            <li><a href="#contact">Travel Information</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        </nav>
+
+    <section class="banner-area">
+        <div class="banner-img" id="bg"></div>
+        <h1>Welcome to seoul</h1>
+        <h3>Introducing Seoul</h3>
+    </section>
+
+    <section class="about-aera" id="about">
+        <h3 class="section-title">About Us</h3>
+        <ul class="about-content">
+            <li class="about-left"></li>
+            <li class="about-right">
+                <h2>About our Comany</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti odio hic corporis iusto! Ut, quos!
+                    Assumenda deleniti odio hic corporis iusto! Ut,  
+                </p>
+                <a href="" class="about-btn">Learn more</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="services-area" id="services">
+        <h3 class="section-title">services</h3>
+        <ul class="services-content">
+            <li>
+                <i class="fas fa-map-marked"></i>
+                <h4>Select Area</h4>
+                <p>You can see the information by selecting the desired area on the map</p>
+            </li>
+            <li>
+                <i class="far fa-handshake"></i>
+                <h4>Destination Introduce</h4>
+                <p>Please share your An impressive travel destination  with other travelers</p>
+            </li>
+            <li>
+                <i class="fas fa-info-circle"></i>
+                <h4>Provide Information</h4>
+                <p>It provides various information necessary for travel</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h3 class="section-title">Contact</h3>
+    </section>
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+              <h2>About us</h2>
+              <div class="content">
+                <p>Welcom to Seoul not only delivers information through web pages but also through various social networking sites such as Facebook and Instagram.</p>
+                <div class="social">
+                  <a href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
+                  <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="center box">
+              <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">Seodaemun-gu, Seoul</span>
+                </div>
+                <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+082 10-5414-6892</span>
+                </div>
+                <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">jrenu1342@gmail.com</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="right box">
+              <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <center>
+              <span class="credit">Created By <a href="https://youtube.com/c/codingnepal">Renu</a> | </span>
+              <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+            </center>
+          </div>
+    </footer>
+
+    <a id="topBtn" href="#">
+        <i class="fas fa-chevron-circle-up"></i>
+            </a>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/topbutton.js"></script>
+    <script>
+        var headerig = document.getElementById('bg');
+        window.addEventListener('scroll',function(){
+            headerig.style.opacity = 1 - +window.pageYOffset/550+''
+            // headerig.style.top = +window.pageYOffset+'px'
+        })
+        </script>
+
+    </script>
+</body>
+</html>
