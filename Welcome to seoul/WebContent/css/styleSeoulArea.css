@@ -135,7 +135,11 @@ section p{
     min-height: 100vh;
     color: #fff;
     text-align: center;
-    background-color: rgb(1, 2, 10);
+    /* background-color: rgb(86, 88, 105); */
+    background-image: url(../img/asd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* .banner-img{
     background: url(../img/b1.jpg);

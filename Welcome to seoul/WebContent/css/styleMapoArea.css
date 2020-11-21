@@ -110,7 +110,19 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:110px 100px;
+    padding:110px 50px;
+}
+.banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    /* background-color: rgb(86, 88, 105); */
+    background-image: url(../img/asd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media (max-width:1000px){
     section{
@@ -122,64 +134,7 @@ section{
         padding: 125px 30px;
     }
 }
-section p{
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 20px;
-    line-height: 2;
-}
-.banner-area{
-    position: relative;
-    justify-content: center;
-    min-height: 100vh;
-    color: #000;
-    text-align: center;
-}
-.banner-img{
-    background: url(../img/b1.jpg);
-    background-repeat:no-repeat;
-    background-position:center;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    -webkit-background-size:cover;
-    -moz-background-size: cover;
-    background-size:cover;
-    -o-background-size: cover;
-    z-index:-10 ;     
-}
-.banner-area .banner-img:after{
-    content: '';
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.banner-area h1{
-    margin-top: 15px;
-    font-size: 40px;
-    font-family:'merienda';
-}
-.banner-area h3{
-    margin-bottom: 40px;
-    font-size: 25px;
-}
-.banner-area div.box{
-    position: absolute;
-    right: 10px;
-    top: 150px;
-    width: 20%;
-    height: 25%;
-    z-index: 1;
-}
-div.box img{
-    width: 100%;
-    height: 100%;
-}
+
 img[usemap]{
     border: none;
     width: auto;
@@ -200,8 +155,49 @@ img[usemap]{
 
 /* about area*/
 
+section.mainphoto{
+    position: relative;
+    justify-content: center;
+    /* min-height: 110vh; */
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+}
+.mainphoto-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size:cover;
+    background-size: cover;
+    z-index: -1;
+}
+.mainphoto h2{
+    /* margin-bottom: 15px; */
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+    font-family:'poppins';
+}
+.mainphoto h3{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.6);
+    width: 98%;
+    padding: 10px;
+    text-align:left;
+}
+
 .board {
-  width: 90%;
+  width: 80%;
   margin: 50px auto;
 }
 /* .heading {
@@ -234,23 +230,33 @@ img[usemap]{
 }
 .photo-header img{
     width: 100%;
+    height: 25vh;
 }
 .photo-body {
-  padding: 30px 20px;
+  padding: 10px 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
 }
-
+.photo-body p{
+  font-size: 14px;
+}
+.photo-body .Rating{
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
 .photo-body .btn {
   display: block;
   color: #fff;
   text-align: center;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #5e41ff, #7c2bff);
   margin-top: 30px;
   text-decoration: none;
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
-
+.photo-body .btn i{
+    color: red;
+}
 .photoborad:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
@@ -280,7 +286,7 @@ img[usemap]{
   width: 100%;
   max-width: 1200px;
   position: relative;
-  margin: 10px auto 40px auto;
+  margin: 40px 0px 0px 0px;
   text-align: center;
 }
 .tag-element a {
@@ -353,4 +359,12 @@ footer{
     color: #fff;
     background-color: #000;
     padding: 60px 0;
+}
+a#topBtn { position: fixed;
+    color: #1e1e31; 
+    right: 5%; 
+    bottom: 30px; 
+    display: none;  
+    z-index: 9999;
+    font-size: 30px; 
 }
